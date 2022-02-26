@@ -70,3 +70,5 @@ exportForm.addEventListener( 'submit', (e) => {
 			exportToCsv( 'bnb-staking-rewards.csv', [ koinlyCsvColumns, ...transactions ] );
 		} );
 } )
+
+document.querySelector( '.year' ).textContent = ( new Date() ).getFullYear();
